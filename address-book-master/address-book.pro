@@ -8,9 +8,9 @@ CONFIG+=debug
 CONFIG+=warn_on
 MOC_DIR=src/tmp
 #LIBS+=-lsqlite3
-QT += sql widgets
 TEMPLATE = app
-TARGET = address_book
+QT+= sql widgets
+TARGET = address-book
 DEPENDPATH += src
 INCLUDEPATH += . src
 
@@ -29,8 +29,8 @@ HEADERS += src/addressbookcontroller.h \
            src/qteditcontactdialog.h \
            src/qterrordialog.h \
            src/sqlitedatasource.h \
-           src/sqliteutils.h \
-    src/sqlite3.h
+           src/sqliteutils.h
+src/sqlite3.h
 SOURCES += src/addressbookcontroller.cpp \
            src/contact.cpp \
            src/dummydatasource.cpp \
@@ -44,4 +44,4 @@ SOURCES += src/addressbookcontroller.cpp \
            src/qterrordialog.cpp \
            src/sqlitedatasource.cpp \
            src/sqliteutils.cpp \
-    src/sqlite3.c
+ src/sqlite3.c \
